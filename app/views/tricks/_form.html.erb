@@ -11,20 +11,36 @@
     </div>
   <% end %>
 
-  <div class="field">
+
+<div class="field">
+  <label for="formGroupName" class="form-label"><%= form.label :name %></label>
+  <input type="text" class="form-control" id="formGroupName" placeholder="Ecrit le nom de la figure">
+</div>
+
+  <!--<div class="field">
     <%= form.label :name %>
     <%= form.text_field :name %>
-  </div>
+  </div>-->
 
-  <div class="field">
+<div class="field">
+  <label for="formGroupPerson" class="form-label"><%= form.label :person %></label>
+  <input type="text" class="form-control" id="formGroupPerson" placeholder="Ecrit le nom de la figure">
+</div>
+
+  <!--<div class="field">
     <%= form.label :person %>
     <%= form.text_field :person %>
-  </div>
+  </div>-->
 
-  <div class="field">
+<div class="field">
+  <label for="formGroupDescription" class="form-label"><%= form.label :description %></label>
+  <input type="text" class="form-control" id="formGroupDescription" placeholder="Ecrit le nom de la figure">
+</div>
+
+  <!--<div class="field">
     <%= form.label :description %>
     <%= form.text_area :description %>
-  </div>
+  </div>-->
 
   <div class="field">
     <%= form.label :difficulty %>

@@ -1,5 +1,13 @@
 <p id="notice"><%= notice %></p>
 
+<h1>AERIAL TRICKS</h1>
+
+<div class="grandediv">
+
+<img class="imgshow" src="<%= @trick.picture %>"/>
+
+<div class="petitediv">
+
 <p>
   <strong>Name:</strong>
   <%= @trick.name %>
@@ -20,10 +28,13 @@
   <%= @trick.difficulty %>
 </p>
 
-<p>
+<!--<p>
   <strong>Picture:</strong>
   <%= @trick.picture %>
-</p>
+</p>-->
 
 <%= link_to 'Edit', edit_trick_path(@trick) %> |
 <%= link_to 'Back', tricks_path %>
+
+</div>
+</div>

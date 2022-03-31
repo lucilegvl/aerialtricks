@@ -1,13 +1,15 @@
+@import 'bootstrap';
+
 *{
   margin:0;
   padding:0;
   background-color: #fafafa;
 }
 
-//body {
-  //background-color: #fafafa;
-  //color: #333;
-  //margin: 33px;}
+body {
+  background-color: #fafafa;
+  color: #333;
+  margin: 33px;}
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
@@ -18,6 +20,10 @@ tbody{
     display:flex;
     flex-wrap:wrap;
     align-items:center;
+}
+
+.grandediv{
+ display:flex;
 }
 
 h1{
@@ -61,6 +67,11 @@ img{
   width:220px;
   height:220px;
   margin: 39px;
+}
+
+.imgshow{
+  width:565px;
+  height:565px;
 }
 
 div.field,
