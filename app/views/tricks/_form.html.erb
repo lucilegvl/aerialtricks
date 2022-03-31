@@ -14,7 +14,7 @@
 
 <div class="field">
   <label for="formGroupName" class="form-label"><%= form.label :name %></label>
-  <input type="text" class="form-control" id="formGroupName" placeholder="Ecrit le nom de la figure">
+  <input type="text" class="form-control" id="formGroupName" placeholder="Comment s'appelle ta figure?">
 </div>
 
   <!--<div class="field">
@@ -24,7 +24,7 @@
 
 <div class="field">
   <label for="formGroupPerson" class="form-label"><%= form.label :person %></label>
-  <input type="text" class="form-control" id="formGroupPerson" placeholder="Ecrit le nom de la figure">
+  <input type="text" class="form-control" id="formGroupPerson" placeholder="Quel est ton nom?">
 </div>
 
   <!--<div class="field">
@@ -33,8 +33,8 @@
   </div>-->
 
 <div class="field">
-  <label for="formGroupDescription" class="form-label"><%= form.label :description %></label>
-  <input type="text" class="form-control" id="formGroupDescription" placeholder="Ecrit le nom de la figure">
+  <label for="FormControlDescription" class="form-label"><%= form.label :description %></label>
+  <textarea class="form-control" id="FormControlDescription" rows="3" ></textarea>
 </div>
 
   <!--<div class="field">
@@ -42,17 +42,29 @@
     <%= form.text_area :description %>
   </div>-->
 
-  <div class="field">
+<div class="field">
+<label for="diffucltyRange" class="form-label"><%= form.label :difficulty %></label>
+<input type="range" class="form-range" min="0" max="5" step="1" id="difficultyRange">
+</div>
+
+  <!--<div class="field">
     <%= form.label :difficulty %>
     <%= form.number_field :difficulty %>
-  </div>
+  </div>-->
 
-  <div class="field">
+<div class="field">
+  <label for="formGroupUrl" class="form-label"><%= form.label :picture %></label>
+  <input type="text" class="form-control" id="formGroupUrl" placeholder="Montre moi ta figure! (url)">
+</div>
+
+  <!--<div class="field">
     <%= form.label :picture %>
     <%= form.text_field :picture %>
-  </div>
+  </div>-->
 
-  <div class="actions">
+<button type="button" class="btn btn-outline-primary"><%= form.submit %></button>
+
+  <!--<div class="actions">
     <%= form.submit %>
-  </div>
+  </div>-->
 <% end %>
