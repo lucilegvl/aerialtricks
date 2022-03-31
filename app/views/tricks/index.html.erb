@@ -21,8 +21,18 @@
         <td><%= trick.person %></td>
         <td><%= trick.description %></td>
         <td><%= trick.difficulty %></td>-->
-        <td><img src="<%= trick.picture %>"/> </td>
-        <!-- <td><%= link_to 'Show', trick %></td>
+        <td>
+          <%= link_to trick do%>
+            <img src="<%= trick.picture %>"/>
+            <%= trick %>
+          <% end %>
+        </td>
+
+        <!--<td>
+          <a href="<%= link_to 'blah', trick %>" alt='photo'>
+            <img src="<%= trick.picture %>"/>
+          </a>
+        </td>
         <td><%= link_to 'Edit', edit_trick_path(trick) %></td>
         <td><%= link_to 'Destroy', trick, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
       </tr>
