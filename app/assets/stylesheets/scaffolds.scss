@@ -1,12 +1,32 @@
-body {
-  background-color: #fff;
-  color: #333;
-  margin: 33px; }
+*{
+  margin:0;
+  padding:0;
+  background-color: #fafafa;
+}
+
+//body {
+  //background-color: #fafafa;
+  //color: #333;
+  //margin: 33px;}
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px; }
+
+h1{
+  font-size:20px;
+  color:#fafafa;
+  text-align:center;
+  background-color:#343889;
+  padding:40px;
+}
+
+.field{
+  font-size: 15px;
+  color:#343889;}
+  // margin:0 auto;
+  //width: 100px;
 
 pre {
   background-color: #eee;
@@ -26,8 +46,17 @@ a:hover {
 th {
   padding-bottom: 5px; }
 
+.centreToi{
+ align-items: center;}
+
 td {
   padding: 0 5px 7px; }
+
+img{
+  width:220px;
+  height:220px;
+  margin: 39px;
+}
 
 div.field,
 div.actions {
