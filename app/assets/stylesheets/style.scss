@@ -18,19 +18,12 @@ p, ol, ul, td, .centreToi {
   margin-right:300px;
   margin-left:300px; }
 
-  header{
-    font-size:20px;
-    //color:#fafafa;
-    text-align:center;
-    background-color:#343889;
-    padding:40px;
-    margin: 0;
-    background-size: cover;
-  }
 
   header h1{
-    font-size:20px;
-    //color:#fafafa;
+    font-size:60px;
+    color:#fafafa;
+    font-family: 'Poppins', sans-serif;
+    font-weight:bolder;
     text-align:center;
     background-color:#343889;
     padding:40px;
@@ -79,8 +72,8 @@ td {
   padding: 0 5px 7px; }
 
 img{
-  width:220px;
-  height:220px;
+  width:173px;
+  height:173px;
   margin: 39px;
   border-radius: 30px;
 }
