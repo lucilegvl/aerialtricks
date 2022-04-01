@@ -1,68 +1,8 @@
-<%= form_with(model: trick) do |form| %>
-  <% if trick.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(trick.errors.count, "error") %> prohibited this trick from being saved:</h2>
-
-      <ul>
-        <% trick.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-
-<!--<div class="field">
-  <label for="formGroupName" class="form-label"><%= form.label :name %></label>
-  <input type="text" class="form-control" id="formGroupName" placeholder="Comment s'appelle ta figure?">
-</div>-->
-
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
-
-<!--<div class="field">
-  <label for="formGroupPerson" class="form-label"><%= form.label :person %></label>
-  <input type="text" class="form-control" id="formGroupPerson" placeholder="Quel est ton nom?">
-</div>-->
-
-  <div class="field">
-    <%= form.label :person %>
-    <%= form.text_field :person %>
-  </div>
-
-<!--<div class="field">
-  <label for="FormControlDescription" class="form-label"><%= form.label :description %></label>
-  <textarea class="form-control" id="FormControlDescription" rows="3" size='30px' ></textarea>
-</div>-->
-
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
-  </div>
-
-<!--<div class="field">
-<label for="diffucltyRange" class="form-label"><%= form.label :difficulty %></label>
-<input type="range" class="form-range" min="0" max="5" step="1" id="difficultyRange">
-</div>-->
-
-  <div class="field">
-    <%= form.label :difficulty %>
-    <%= form.number_field :difficulty %>
-  </div>
-
-<!--<div class="field">
-  <label for="formGroupUrl" class="form-label"><%= form.label :picture %></label>
-  <input type="text" class="form-control" id="formGroupUrl" placeholder="Montre moi ta figure! (url)">
-</div>-->
-
-  <div class="field">
-    <%= form.label :picture %>
-    <%= form.text_field :picture %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+<%= simple_form_for trick do |f| %>
+  <%= f.input :name %>
+  <%= f.input :person %>
+  <%= f.input :description %>
+  <%= f.input :difficulty %>
+  <%= f.input :picture %>
+  <%= f.button :submit, class: 'btn btn-primary' %>
 <% end %>

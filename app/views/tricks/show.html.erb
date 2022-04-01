@@ -2,7 +2,7 @@
 
 <div class="grandediv">
   <img class="imgshow" src="<%= @trick.picture %>"/>
-  
+
 
       <div class="petitediv">
         <div class="line">
@@ -27,6 +27,7 @@
 
         <%= link_to 'Modifier', edit_trick_path(@trick) %>
         <%= link_to 'Retour', tricks_path %>
+        <%= link_to 'Destroy', trick_path, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 
       </div>
 </div>

@@ -11,6 +11,19 @@ body {
   color: #333;
 }
 
+.boutonIndex a {
+  background-color:#343889;
+  padding:5px;
+  color:#fafafa !important;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  border-radius:10px;
+  text-decoration:none ;
+  //font-weight: bolder;
+  //display:flex;
+  //justify-content:right;
+}
+
 img{
   width:173px;
   height:173px;
@@ -21,29 +34,28 @@ ol, ul, td, {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
-   }
+}
 
 .centreToi{
   margin-top:90px;
-  margin-right:400px;
-  margin-left:400px;
+  //margin-right:350px;
+  //margin-left:350px;
   display:flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
 header h1{
   font-size:60px;
   color:#fafafa;
+
+  background-color:#343889 !important ;
+  padding:40px;
+  margin: 0;
   font-family: 'Poppins', sans-serif;
   font-weight:bolder;
   text-align:center;
-  background-color:#343889;
-  padding:40px;
-  margin: 0;
 }
-
 
 
 .grandediv{
