@@ -1,41 +1,31 @@
 <p id="notice"><%= notice %></p>
 
-<h1>AERIAL TRICKS</h1>
-
 <div class="grandediv">
+  <img class="imgshow" src="<%= @trick.picture %>"/>
 
-<img class="imgshow" src="<%= @trick.picture %>"/>
+      <div class="petitediv">
+        <div class="line">
+          <!--<h2>Name:</h2>-->
+          <p class="showName"><%= @trick.name %>  </p>
+        </div>
 
-<div class="petitediv">
+        <div class="line">
+          <!--<h2>Person:</h2>-->
+          <p class="showPerson"><%= @trick.person %>  </p>
+        </div>
 
-<div>
-  <h2>Name:</h2>
-  <p><%= @trick.name %>  </p>
-</div>
+        <div class="line">
+          <!--<h2>Description:</h2>-->
+          <p class="showDesc"><%= @trick.description %>  </p>
+        </div>
 
-<div>
-  <h2>Person:</h2>
-  <p><%= @trick.person %>  </p>
-</div>
+        <div class="line">
+          <!--<h2>Difficulté</h2>-->
+          <p><%= @trick.difficulty %> </p>
+        </div>
 
-<div>
-  <h2>Description:</h2>
-  <p><%= @trick.description %>  </p>
-</div>
+        <%= link_to 'Edit', edit_trick_path(@trick) %>
+        <%= link_to 'Back', tricks_path %>
 
-<div>
-  <h2>Difficulté</h2>
-  <p><%= @trick.difficulty %> </p>
-</div>
-
-
-<!--<p>
-  <strong>Picture:</strong>
-  <%= @trick.picture %>
-</p>-->
-
-<%= link_to 'Edit', edit_trick_path(@trick) %> |
-<%= link_to 'Back', tricks_path %>
-
-</div>
+      </div>
 </div>

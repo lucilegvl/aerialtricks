@@ -33,11 +33,40 @@ p, ol, ul, td, .centreToi {
 tbody{
     display:flex;
     flex-wrap:wrap;
-    //align-items:space-between;
+    justify-content:space-between;
 }
 
 .grandediv{
  display:flex;
+}
+
+.petitediv{
+  margin:0px;
+}
+
+//.line{
+  //display:flex;
+//}
+
+.showName{
+  font-size:35px;
+  color:#343889;
+  font-family: 'Poppins', sans-serif;
+  font-weight:bolder;
+}
+
+.showPerson{
+  font-size:25px;
+  color:#343889;
+  font-family: 'Poppins', sans-serif;
+  //font-weight:bolder;
+}
+
+.showDesc{
+  font-size:20px;
+  color:#343889;
+  font-family: 'Poppins', sans-serif;
+  //font-weight:bolder;
 }
 
 
