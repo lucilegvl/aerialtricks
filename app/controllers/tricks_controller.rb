@@ -1,4 +1,6 @@
 class TricksController < ApplicationController
+skip_before_action :authenticate_user!, only: %i[index show]
+
   before_action :set_trick, only: %i[ show edit update destroy ]
 
   # GET /tricks or /tricks.json
@@ -21,6 +23,9 @@ class TricksController < ApplicationController
 
   # POST /tricks or /tricks.json
   def create
+
+    before_action :user_signed_in?
+
     @trick = Trick.new(trick_params)
 
     respond_to do |format|
