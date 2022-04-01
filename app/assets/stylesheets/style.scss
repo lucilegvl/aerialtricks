@@ -18,8 +18,13 @@ ol, ul, td, {
    }
 
 .centreToi{
-  margin-right:329px;
-  margin-left:329px;
+  margin-top:90px;
+  margin-right:400px;
+  margin-left:400px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
 }
 
   header h1{
