@@ -1,8 +1,11 @@
 <%= simple_form_for trick do |f| %>
-  <%= f.input :name %>
-  <%= f.input :person %>
-  <%= f.input :description %>
-  <%= f.input :difficulty %>
-  <%= f.input :picture %>
-  <%= f.button :submit, class: 'btn btn-primary' %>
+
+  <div class="formulaire">
+  <div class="lineform"> <%= f.input :name %> </div>
+  <div class="lineform"><%= f.input :person %></div>
+  <div class="lineform"><%= f.input :description %></div>
+  <div class="lineform"><%= f.input :difficulty %></div>
+  <div class="lineform"><%= f.input :picture %></div>
+  <div class="lineform"><%= f.button :submit, class: 'btn btn-primary' %></div>
+  </div>
 <% end %>

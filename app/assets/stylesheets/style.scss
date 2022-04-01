@@ -13,15 +13,44 @@ body {
 
 .boutonIndex a {
   background-color:#343889;
-  padding:5px;
+  padding:10px;
   color:#fafafa !important;
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Poppins', sans-serif;
   border-radius:10px;
   text-decoration:none ;
   //font-weight: bolder;
-  //display:flex;
-  //justify-content:right;
+
+}
+
+.btn-primary{
+  background-color: #fafafa !important;
+  color:#343889 !important;
+  border-color:#343889;
+}
+
+.btn-primary:hover{
+  background-color: #343889 !important;
+  color:#fafafa !important;
+  border-color:#343889;
+}
+
+.boutonIndex{
+
+  display:flex;
+  justify-content:center;
+  margin-top: 40px;
+}
+
+.formulaire{
+  margin-top:89px;
+}
+
+.lineform{
+  margin: 30px 0px;
+  width: 520px;
+  color:#343889;
+  border-radius: 10px;
 }
 
 img{
@@ -93,8 +122,8 @@ header h1{
 }
 
 .imgshow{
-  width:468px;
-  height:468px;
+  width:468px !important;
+  height:468px !important;
   margin: 0 39px 0 0;
 }
 
