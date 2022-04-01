@@ -11,13 +11,16 @@ body {
   color: #333;
 }
 
-ol, ul, td, .centreToi {
+ol, ul, td, {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  margin-right:300px;
-  margin-left:300px; }
+   }
 
+.centreToi{
+  margin-right:329px;
+  margin-left:329px;
+}
 
   header h1{
     font-size:60px;
@@ -34,6 +37,7 @@ tbody{
     display:flex;
     flex-wrap:wrap;
     justify-content:space-between;
+    margin: 10 40;
 }
 
 .grandediv{
@@ -76,7 +80,7 @@ tbody{
   color:#343889;
   // margin:0 auto;
   width: 520px;
-margin-left: 40px;}
+  margin-left: 40px;}
 
 pre {
   background-color: #eee;
@@ -105,14 +109,14 @@ th {
 img{
   width:173px;
   height:173px;
-  margin: 39px;
+  margin: 15px;
   border-radius: 30px;
 }
 
 .imgshow{
   width:565px;
   height:565px;
-  margin-right:39px;
+  margin: 0 39px 0 0;
 }
 
 div.field,

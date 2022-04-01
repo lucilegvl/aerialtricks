@@ -13,46 +13,20 @@
   </thead>-->
 
 
-  <tbody class="centreToi">
+  <div class="centreToi">
     <% @tricks.each do |trick| %>
       <tr>
-        <!--<td><%= trick.name %></td>
-        <td><%= trick.person %></td>
-        <td><%= trick.description %></td>
-        <td><%= trick.difficulty %></td>-->
-<!--
-<div class="row row-cols-3 row-cols-md-2 g-4">
-        <div class="col row row-cols-1 row-cols-md-2 g-4">
-          <div class="card">
-            <img src="<%= trick.picture %>" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title"><%= trick.name %></h5>
-              <p class="card-text"><%= trick.description %></p>
-              <button type="button" class="btn btn-outline-primary"><%= link_to 'test', new_trick_path(@trick) %>test</button>
-            </div>
-          </div>
-        </div>
-</div>-->
         <td>
           <%= link_to trick do%>
             <img src="<%= trick.picture %>"/>
           <% end %>
         </td>
-
-        <!--<td>
-          <a href="<%= link_to 'blah', trick %>" alt='photo'>
-            <img src="<%= trick.picture %>"/>
-          </a>
-        </td>-->
-        
-        <td><%= link_to 'Edit', edit_trick_path(trick) %></td>
-        <td><%= link_to 'Destroy', trick, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <!--<td><%= link_to 'Edit', edit_trick_path(trick) %></td>
+        <td><%= link_to 'Destroy', trick, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
       </tr>
     <% end %>
+  </div>
 
-  </tbody>
-
-<!--</table>-->
 
 <br>
 
