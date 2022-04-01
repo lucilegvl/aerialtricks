@@ -11,7 +11,7 @@ body {
   color: #333;
 }
 
-p, ol, ul, td, .centreToi {
+ol, ul, td, .centreToi {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -38,6 +38,7 @@ tbody{
 
 .grandediv{
  display:flex;
+ margin:100px;
 }
 
 .petitediv{
@@ -94,11 +95,12 @@ a:hover {
 th {
   padding-bottom: 5px; }
 
-//.centreToi{
- //align-items: center;}
+.centreToi{
+ margin: 40;}
 
-td {
-  padding: 0 5px 7px; }
+//td {
+  //padding: 0 5px 7px; }
+
 
 img{
   width:173px;
@@ -110,6 +112,7 @@ img{
 .imgshow{
   width:565px;
   height:565px;
+  margin-right:39px;
 }
 
 div.field,
