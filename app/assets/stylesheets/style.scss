@@ -11,6 +11,12 @@ body {
   color: #333;
 }
 
+img{
+  width:173px;
+  height:173px;
+  margin: 15px;
+  border-radius: 30px;}
+
 ol, ul, td, {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -27,23 +33,18 @@ ol, ul, td, {
 
 }
 
-  header h1{
-    font-size:60px;
-    color:#fafafa;
-    font-family: 'Poppins', sans-serif;
-    font-weight:bolder;
-    text-align:center;
-    background-color:#343889;
-    padding:40px;
-    margin: 0;
-  }
-
-tbody{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    margin: 10 40;
+header h1{
+  font-size:60px;
+  color:#fafafa;
+  font-family: 'Poppins', sans-serif;
+  font-weight:bolder;
+  text-align:center;
+  background-color:#343889;
+  padding:40px;
+  margin: 0;
 }
+
+
 
 .grandediv{
  display:flex;
@@ -79,6 +80,11 @@ tbody{
   //font-weight:bolder;
 }
 
+.imgshow{
+  width:468px;
+  height:468px;
+  margin: 0 39px 0 0;
+}
 
 .field{
   font-size: 15px;
@@ -109,20 +115,6 @@ th {
 
 //td {
   //padding: 0 5px 7px; }
-
-
-img{
-  width:173px;
-  height:173px;
-  margin: 15px;
-  border-radius: 30px;
-}
-
-.imgshow{
-  width:565px;
-  height:565px;
-  margin: 0 39px 0 0;
-}
 
 div.field,
 div.actions {

@@ -2,6 +2,7 @@
 
 <div class="grandediv">
   <img class="imgshow" src="<%= @trick.picture %>"/>
+  
 
       <div class="petitediv">
         <div class="line">
@@ -24,8 +25,8 @@
           <p>Difficuté: <%= @trick.difficulty %> </p>
         </div>
 
-        <%= link_to 'Edit', edit_trick_path(@trick) %>
-        <%= link_to 'Back', tricks_path %>
+        <%= link_to 'Modifier', edit_trick_path(@trick) %>
+        <%= link_to 'Retour', tricks_path %>
 
       </div>
 </div>
