@@ -1,19 +1,50 @@
 <p id="notice"><%= notice %></p>
 
-<div class="box">
-  <img class="imgshow" src="<%= @trick.picture %>"/>
 
-
-      <div class="littlebox">
-        <div class="line">
-          <!--<h2>Name:</h2>-->
-          <p class="showName"><%= @trick.name %>  </p>
+<div class="row">
+    <div class="col-xs-12 col-sm-5">
+        <img class="img-responsive" src="{{$blogPost->getImagePath()}}" width="100%">
+    </div>
+    <div class="col-xs-12 col-sm-7">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>{!!$blogPost->title!!}</h2>
+            </div>
+            <div class="col-sm-6">
+                <h3 class="pull-right">
+                    {{$blogPost->created_at}}
+                </h3>
+            </div>
         </div>
+        {!! Purifier::clean($blogPost->message) !!}
+    </div>
+    <div class="col-xs-12">
+        <hr />
+    </div>
+</div>
 
-        <div class="line">
-          <!--<h2>Person:</h2>-->
-          <p class="showPerson"><%= @trick.person %>  </p>
+
+
+
+
+<div class="row">
+<div class="col-xs-12 col-sm-5">
+  <img class="imgshow img-responsive" src="<%= @trick.picture %>"/>
+</div>
+
+      <div class="littlebox col-xs-12 col-sm-7"">
+        <div class="row">
+            <div class="col-sm-6">
+            <p class="showName"><%= @trick.name %>  </p>
+            </div>
+            <div class="col-sm-6">
+              <p class="showPerson"><%= @trick.person %>  </p>
+            </div>
+
         </div>
+      </div>
+
+
 
         <div class="line">
           <!--<h2>Description:</h2>-->
