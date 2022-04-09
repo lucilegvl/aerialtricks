@@ -87,13 +87,18 @@ header h1{
   text-align:center;
 }
 
+footer {
+  background-color:#343889 !important;
+  padding: 30px;
+  margin-top: 30px;
+}
 
-.grandediv{
+.box{
  display:flex;
  margin:100px;
 }
 
-.petitediv{
+.littlebox{
   margin:0px;
 }
 
