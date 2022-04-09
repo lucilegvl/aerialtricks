@@ -36,25 +36,12 @@
         <div class="row">
             <div class="col-sm-6">
             <p class="showName"><%= @trick.name %>  </p>
-            </div>
-            <div class="col-sm-6">
-              <p class="showPerson"><%= @trick.person %>  </p>
-            </div>
-
-        </div>
+            <p class="showPerson"><%= @trick.person %>  </p>
+            <p class="showDesc"><%= @trick.description %>  </p>
+            <p>Difficuté: <%= @trick.difficulty %> </p>
+          </div>
       </div>
 
-
-
-        <div class="line">
-          <!--<h2>Description:</h2>-->
-          <p class="showDesc"><%= @trick.description %>  </p>
-        </div>
-
-        <div class="line">
-          <!--<h2>Difficulté</h2>-->
-          <p>Difficuté: <%= @trick.difficulty %> </p>
-        </div>
 
         <%= link_to 'Modifier', edit_trick_path(@trick) %>
         <%= link_to 'Retour', tricks_path %>
