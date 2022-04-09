@@ -1,36 +1,10 @@
 <p id="notice"><%= notice %></p>
 
+<div class="row box">
 
-<div class="row">
-    <div class="col-xs-12 col-sm-5">
-        <img class="img-responsive" src="{{$blogPost->getImagePath()}}" width="100%">
-    </div>
-    <div class="col-xs-12 col-sm-7">
-        <div class="row">
-            <div class="col-sm-6">
-                <h2>{!!$blogPost->title!!}</h2>
-            </div>
-            <div class="col-sm-6">
-                <h3 class="pull-right">
-                    {{$blogPost->created_at}}
-                </h3>
-            </div>
-        </div>
-        {!! Purifier::clean($blogPost->message) !!}
-    </div>
-    <div class="col-xs-12">
-        <hr />
-    </div>
-</div>
-
-
-
-
-
-<div class="row">
-<div class="col-xs-12 col-sm-5">
-  <img class="imgshow img-responsive" src="<%= @trick.picture %>"/>
-</div>
+      <div class="col-xs-12 col-sm-5">
+        <img class="imgshow img-responsive" src="<%= @trick.picture %>"/>
+      </div>
 
       <div class="littlebox col-xs-12 col-sm-7"">
         <div class="row">
