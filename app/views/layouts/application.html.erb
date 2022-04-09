@@ -19,7 +19,7 @@
   <body>
 
     <header>
-      <h1>AERIAL TRICKS</h1>
+      <h1><%= link_to "Aerial tricks", tricks_path %></h1>
     </header>
 
 <% if notice %>
@@ -42,7 +42,7 @@
         <%= link_to "Log in", new_user_session_path %>
         <%= link_to "Register", new_user_registration_path %>
   <% end %>
-        <%= link_to "Accueil", new_user_session_path %>
+        <%= link_to "Accueil", tricks_path %>
 
   </footer>
 
