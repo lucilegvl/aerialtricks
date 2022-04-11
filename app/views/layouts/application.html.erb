@@ -19,7 +19,7 @@
   <body>
 
     <header>
-      <h1><%= link_to "Aerial tricks", tricks_path %></h1>
+      <h1><%= link_to "Aerial tricks", tricks_path, class: "btn btn-link" %></h1>
     </header>
 
 <% if notice %>
@@ -36,13 +36,13 @@
   <footer>
 
   <% if user_signed_in? %>
-        <%= link_to current_user.email, edit_user_registration_path %>
-        <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+        <%= link_to current_user.email, edit_user_registration_path, class:"btn btn-link little-link" %>
+        <%= link_to "Log out", destroy_user_session_path, method: :delete, class:"btn btn-link little-link"%>
       <% else %>
-        <%= link_to "Log in", new_user_session_path %>
-        <%= link_to "Register", new_user_registration_path %>
+        <%= link_to "Log in", new_user_session_path, class:"btn btn-link little-link"%>
+        <%= link_to "Register", new_user_registration_path, class:"btn btn-link little-link"%>
   <% end %>
-        <%= link_to "Accueil", tricks_path %>
+        <%= link_to "Accueil", tricks_path, class:"btn btn-link little-link" %>
 
   </footer>
 

@@ -164,6 +164,26 @@ a:visited {
 a:hover {
   color: #343889;}
 
+.btn-link {
+  color:#fafafa !important;
+  font-size:60px;
+
+  text-decoration:none !important;
+
+  background-color:#343889 !important ;
+  padding:40px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight:bolder;
+  text-align:center;
+}
+
+.little-link{
+  color:#fafafa !important;
+  font-size:18px !important;
+  padding:10px;
+}
+
 th {
   padding-bottom: 5px; }
 
