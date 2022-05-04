@@ -24,7 +24,7 @@ skip_before_action :authenticate_user!, only: %i[index show]
   # POST /tricks or /tricks.json
   def create
 
-    before_action :user_signed_in?
+    #before_action :user_signed_in?
 
     @trick = Trick.new(trick_params)
 
