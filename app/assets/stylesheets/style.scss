@@ -60,7 +60,7 @@ img{
   margin: 15px;
   border-radius: 30px;}
 
-ol, ul, td, {
+ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -171,7 +171,7 @@ a:hover {
   text-decoration:none !important;
 
   background-color:#343889 !important ;
-  padding:40px;
+  /*padding:40px;*/
   margin: 0;
   font-family: 'Poppins', sans-serif;
   font-weight:bolder;
